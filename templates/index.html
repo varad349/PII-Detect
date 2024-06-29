@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NER File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .progress-bar {
+            width: 0%;
+            height: 5px;
+            background-color: green;
+            transition: width 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Named Entity Recognition (NER)</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" name="file" id="fileInput">
+            <button type="submit">Upload File</button>
+        </form>
+        <div id="progressBar" class="progress-bar"></div>
+        <div id="nerResults"></div>
+        <div id="phones"></div>
+        <div id="emails"></div>
+        <p id="filename"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
