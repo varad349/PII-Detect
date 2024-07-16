@@ -9,4 +9,5 @@ Phone Numbers and Emails: Extracts phone numbers and email addresses.
 Document Processing: Supports PDF, DOCX, and text files for entity extraction.
 Real-time Extraction: Provides immediate results upon file upload, enhancing user workflows and document processing efficiency.
 (will provide the link to download the model soon,Place the model files in the ner_model directory after downloading)
+(Visit the MASTER BRANCH to see the code.)
 
